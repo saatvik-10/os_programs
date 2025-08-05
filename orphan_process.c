@@ -1,3 +1,9 @@
+/*
+NAME - SAATVIK MADAN
+ROLL NO - 81
+STATEMENT - WAP TO CREATE A CHILD PROCESS AND MAKE IT AN ORPHAN PROCESS
+*/
+
 #include <sys/types.h>
 #include <unistd.h>
 #include <stdio.h>
