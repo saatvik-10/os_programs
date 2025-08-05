@@ -22,3 +22,10 @@ int main(void) {
     }
     exit(0);
 }
+
+/*
+Parent process with id 39852
+Parent is terminating, child 39853 will become orphan
+Child process with id 39853
+Child's parent process id is 1
+*/
