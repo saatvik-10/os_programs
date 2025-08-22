@@ -61,3 +61,23 @@ int main() {
 
     return 0;
 }
+
+/*
+Enter total number of processes : 4
+
+Enter Process 1 Arrival Time : 2
+Enter Process 1 Burst Time   : 4
+Enter Process 2 Arrival Time : 3
+Enter Process 2 Burst Time   : 5
+Enter Process 3 Arrival Time : 3
+Enter Process 3 Burst Time   : 2
+Enter Process 4 Arrival Time : 3
+Enter Process 4 Burst Time   : 5
+Process BT      WT      TAT
+P[1]    4       0       4
+P[2]    5       3       8
+P[3]    2       8       10
+P[4]    5       10      15
+Average Waiting Time: 5.25
+Average Turnaround Time: 9.25
+*/
