@@ -17,3 +17,8 @@ int main () {
     }
     return 0;
 }
+
+/*
+Hello World from child process with id 18326
+Hello World from parent process with id 18325
+*/
