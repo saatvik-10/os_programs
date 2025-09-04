@@ -1,14 +1,14 @@
 #include <stdio.h>
-#define MAX_PROCESSES 10
+#define MAXI 10
 
 int main() {
     int n, time = 0, completed = 0, min_rem, shortest, finish_time;
     float total_wait = 0, total_turnaround = 0;
-    int pid[MAX_PROCESSES];
-    int burst[MAX_PROCESSES];
-    int arrival[MAX_PROCESSES];
-    int remaining[MAX_PROCESSES];
-    int is_completed[MAX_PROCESSES];
+    int pid[MAXI];
+    int burst[MAXI];
+    int arrival[MAXI];
+    int remaining[MAXI];
+    int isCompleted[MAXI];
 
     printf("Enter number of processes: ");
     scanf("%d", &n);
@@ -18,15 +18,15 @@ int main() {
         scanf("%d%d", &arrival[i], &burst[i]);
         pid[i] = i + 1;
         remaining[i] = burst[i];
-        is_completed[i] = 0;
+        isCompleted[i] = 0;
     }
 
     while (completed != n) {
-        min_rem = 100000;
+        min_rem = 10000;
         shortest = -1;
 
         for (int i = 0; i < n; i++) {
-            if (arrival[i] <= time && is_completed[i] == 0 && remaining[i] < min_rem && remaining[i] > 0) {
+            if (arrival[i] <= time && isCompleted[i] == 0 && remaining[i] < min_rem && remaining[i] > 0) {
                 min_rem = remaining[i];
                 shortest = i;
             }
@@ -41,7 +41,7 @@ int main() {
         time++;
 
         if (remaining[shortest] == 0) {
-            is_completed[shortest] = 1;
+            isCompleted[shortest] = 1;
             completed++;
             finish_time = time;
             int wait = finish_time - arrival[shortest] - burst[shortest];
