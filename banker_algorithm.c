@@ -47,8 +47,8 @@ int main() {
     }
 
     int count = 0;
-    int madeProgress;
-    while (madeProgress == 1 && count < n) {
+    int madeProgress = 1;
+    while (count < n && madeProgress == 1) {
         madeProgress = 0;
         for (i = 0; i < n; i++) {
             if (finished[i] == 0) {
