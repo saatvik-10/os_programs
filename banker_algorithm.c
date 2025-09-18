@@ -86,3 +86,28 @@ int main() {
 
     return 0;
 }
+
+/*
+Enter number of processes: 5
+Enter number of resource types: 3 
+
+Enter Allocation matrix (5 x 3):
+0 1 0
+2 0 0
+3 0 2
+2 1 1
+0 0 2
+
+Enter Max matrix (5 x 3):
+7 5 3
+3 2 2
+9 0 2
+2 2 2
+4 3 3
+
+Enter Available resources (3 values):
+3 3 2
+
+System is in a SAFE state.
+Safe sequence: P1 -> P3 -> P4 -> P0 -> P2
+*/
